@@ -3,6 +3,7 @@ from collections import User, Posts
 from flask import session, render_template, redirect, flash, url_for, request
 
 @app.route('/post')
+<<<<<<< HEAD
 def posts():
 
     if not session.get('logged_in'):
@@ -12,3 +13,7 @@ def posts():
     title = request.form["title"]
     p = Posts(author = user, title = title, content = body)
     p.save() 
+=======
+def Posts():
+    
+>>>>>>> 0443485b4fe9f886520b4616cc5089a10154072b
